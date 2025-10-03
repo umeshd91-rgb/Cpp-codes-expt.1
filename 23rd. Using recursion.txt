@@ -1,0 +1,11 @@
+#include <stdio.h>
+void show(char *s) {
+    if(*s) {
+        putchar(*s);
+        show(s+1);
+    }
+}
+int main() {
+    show("Hello, Robotics!\n");
+    return 0;
+}
